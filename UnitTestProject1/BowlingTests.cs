@@ -8,8 +8,6 @@ namespace UnitTestProject1
     public class BowlingTests
     {
 
-
-
         [TestMethod]
 
         public void Score_RollBall_Spare()
@@ -38,7 +36,6 @@ namespace UnitTestProject1
 
             NewFrame.Roll(0);
             NewFrame.Roll(10);
-
 
             //Act
             var actual = NewFrame.Score();
@@ -74,7 +71,6 @@ namespace UnitTestProject1
 
             NewFrame.Roll(1);
             NewFrame.Roll(2);
-
 
             //Act
             var actual = NewFrame.Score();

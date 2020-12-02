@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ClassLibrary1
 {
@@ -9,12 +10,23 @@ namespace ClassLibrary1
         public int Score;
     }
 
+    public class BowlingGame
+
+    {
+        public List<Person> PersonList = new List<Person>();
+        public Person CurrentPlayer;
+
+        public void StartGame(int numberOfPlayers)
+        {
+            
+        }
+    }
+
     public class Round
 
     {
-
+        public int currentFrame;
         private int _personScore;
-
         private int _pins;
 
         public void Roll(int pins)
@@ -30,18 +42,6 @@ namespace ClassLibrary1
         public int PersonScoreMethod()
         {
             return _personScore;
-        }
-
-        public bool ScoreZero(int pinsKnockedDown)
-        {
-            if (pinsKnockedDown < 1)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
         }
     }
 }
