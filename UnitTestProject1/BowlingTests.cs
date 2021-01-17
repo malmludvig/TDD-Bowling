@@ -86,15 +86,28 @@ namespace UnitTestProject1
             Assert.AreEqual(14, actual);
         }
 
-        public void Game_GetScoreAndName_ReturnTrue()
+        [TestMethod]
+        public void Game_GetNameFromPlayer_ReturnTrue()
         {
             var newGame = new BowlingGameWithPeople();
 
             var myList = newGame.StartGame(2);
 
-            var actual = myList[0].Score + myList[1].Score;
+            var actual = myList[0].Name;
 
             Assert.AreEqual("Peter", actual);
+        }
+
+        [TestMethod]
+        public void Game_GetScoreFromPlayer_ReturnTrue()
+        {
+            var newGame = new BowlingGameWithPeople();
+
+            var myList = newGame.StartGame(2);
+
+            var actual = myList[0].Score;
+
+            Assert.AreEqual(0, actual);
         }
 
         [TestMethod]

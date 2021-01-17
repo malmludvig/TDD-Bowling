@@ -46,16 +46,14 @@ namespace ClassLibrary1
             return myList;
         }
 
-        public void GetPlayerNamesAndScores(List<Person> PersonList)
+        public void PrintPlayerNamesAndScores(List<Person> PersonList)
 
         {
             foreach (var person in PersonList)
                 
-                {
-
-                Console.WriteLine("Name of player: " + person.Name + " Score of player: "+ person.Score);
-
-                }  
+            {
+            Console.WriteLine("Name of player: " + person.Name + " Score of player: "+ person.Score);
+            }  
         }
     }
 
